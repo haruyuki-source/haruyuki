@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Build Quartz static site
-        run: node bootstrap-cli.mjs build
+        run: npx quartz build
 
       - name: Upload public static files
         uses: actions/upload-pages-artifact@v3
