@@ -1,3 +1,20 @@
-@use "./variables.scss" as *;
+// custom.scss — 宇宙春雪自定义样式
 
-// put your custom CSS here!
+// 隐藏 footer 的 "Created with Quartz" 文字，保留自定义链接
+footer > p:first-child {
+  display: none;
+}
+
+// 侧边栏关系图谱：确保容器有足够高度，节点不重叠
+.graph-container {
+  min-height: 250px;
+}
+
+.graph-outer {
+  min-height: 250px;
+}
+
+// Properties 框字体稍小
+.note-properties {
+  font-size: 0.85em;
+}
